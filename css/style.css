@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.landing {
+  background-color: rgba(115, 66, 214, 0.1);
+  height: 124vh;
+}
+.landing nav {
+  height: 80px;
+  display: flex;
+}
+.landing nav .container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 24px;
+  align-items: center;
+}
+.landing nav .container .links {
+  display: flex;
+  list-style-type: none;
+}
+.landing nav .container .links .link {
+  margin-right: 16px;
+  font-size: 20px;
+  color: #7342d6;
+  font-weight: bold;
+  padding: 8px;
+}
+.landing nav .container .links .link a {
+  text-decoration: none;
+}
+.landing nav .container .links .link.primary {
+  border: 2px solid #7342d6;
+  border-radius: 4px;
+}
+.landing nav .container .links .link.primary:hover {
+  text-decoration: none;
+}
+.landing nav .container .links .link:hover {
+  text-decoration: underline;
+}
+.landing nav .container .logo {
+  width: 160px;
+  height: auto;
+}
+.landing .header {
+  height: calc(100vh - 80px);
+  padding-bottom: 24vh;
+}
+.landing .header .container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.landing .header .container figure {
+  padding: 20px;
+}
+.landing .header .container figure img {
+  width: 100%;
+}
+.landing .header .container .btn {
+  background-color: #7342d6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+}
+.landing .header .container .btn:active {
+  transform: translateY(-1px);
+}
+.landing .header .container .description .title {
+  font-size: 56px;
+  color: #7342d6;
+  margin-bottom: 24px;
+}
+.landing .header .container .description .subTitle {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.purp {
+  color: #7342d6;
+}
+
+.highlights {
+  position: relative;
+}
+.highlights .container {
+  padding: 56px 0;
+}
+.highlights .container .row {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlights .container .row .title {
+  font-size: 40px;
+}
+.highlights .container .row .wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.highlights .container .row .wrapper .highlight {
+  height: 8vh;
+  min-height: 320px;
+}
+.highlights .container .row .wrapper .highlight .imgWrapper {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.highlights .container .row .wrapper .highlight .imgWrapper img {
+  margin-top: 80px;
+  height: 70px;
+  width: auto;
+  filter: invert(80%) sepia(20%) saturate(5786%) hue-rotate(359deg) brightness(103%) contrast(91%);
+}
+.highlights .container .row .wrapper .highlight .imgWrapper .subtitles {
+  min-height: 142px;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+}
+.highlights .container .row .wrapper .highlight .imgWrapper .subtitles .subtitle {
+  font-size: 24px;
+  min-height: 56px;
+  color: #8955CF;
+}
+.highlights .container .row .wrapper .highlight .imgWrapper .subtitles .description {
+  max-width: 320px;
+  max-height: 80px;
+  scrollbar-color: rgba(0, 0, 0, 0);
+  white-space: wrap;
+  overflow-y: scroll;
+  display: block;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
+}
+.highlights .container .row .wrapper .highlight .imgWrapper .subtitles .description::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.highlights:before {
+  background: url(/assets/wave.svg);
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transform: translateY(-100%);
+  width: 101vw;
+  height: 12vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.highlights:after {
+  background: url(/assets/wave.svg);
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  transform: translateY(100%) rotate(180deg);
+  width: 101vw;
+  height: 12vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.bookSection {
+  background-color: rgba(115, 66, 214, 0.1);
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+.bookSection .container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookSection .container .row .title {
+  padding-bottom: 48px;
+  font-size: 32px;
+}
+.bookSection .container .row .books {
+  display: flex;
+  justify-content: space-between;
+}
+.bookSection .container .row .books .book {
+  padding: 0 6.25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bookSection .container .row .books .book:hover img {
+  transform: scale(1.07);
+  cursor: no-drop;
+  transition: all 400ms ease;
+}
+.bookSection .container .row .books .book .imgTitle {
+  font-size: 16px;
+  width: auto;
+}
+.bookSection .container .row .books .book .imgTitle:hover {
+  cursor: no-drop;
+  text-decoration: underline;
+}
+.bookSection .container .row .books .book .imgWrapper {
+  height: auto;
+  max-height: 320px;
+  width: auto;
+  max-width: 214px;
+  overflow: hidden;
+  border-radius: 3.125%;
+  margin-bottom: 8px;
+  display: flex;
+}
+.bookSection .container .row .books .book .imgWrapper img {
+  object-fit: contain;
+  width: 100%;
+}
+.bookSection .container .row .books .book .ratings {
+  color: #F4B70D;
+}
+
+.explore {
+  background: rgba(115, 66, 214, 0.1);
+}
+.explore .container .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.explore .container .row .title {
+  font-size: 32px;
+  padding: 16px 0;
+}
+.explore .container .row .subtitle {
+  margin: 16px 0;
+  background-color: #7342d6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+}
+.explore .container .row .subtitle:active {
+  transform: translateY(-1px);
+}
+
+.footer {
+  background-color: #303030;
+}
+
+/*# sourceMappingURL=style.css.map */
